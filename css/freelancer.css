@@ -517,7 +517,7 @@ fieldset[disabled] .btn-success.active {
 
 /* Create two equal columns that sits next to each other */
 .column {
-  flex: 50%;
+  flex: 33%;
   max-width: 50%;
   padding: 0 4px;
 }
@@ -526,14 +526,14 @@ fieldset[disabled] .btn-success.active {
   vertical-align: middle;
   width: 100%;
 }
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsive layout - makes a one column-layout instead of two columns */
 @media screen and (max-width: 800px) {
   .column {
     flex: 100%;
     max-width: 100%;
   }
 }
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - makes the one columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
