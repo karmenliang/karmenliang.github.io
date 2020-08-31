@@ -122,12 +122,14 @@ header .intro-text .skills {
   header .intro-text .skills {
     font-size: 1.25em;
     color: #E2E4E7;
+    width: 50%;
   }
 }
 .navbar-custom {
   background: #050507;
   font-family: "Lexend Peta", "Roboto", "Helvetica Neue", sans-serif;
   border: none;
+  padding: 25px 0;
 }
 .navbar-custom a:focus {
   outline: none;
@@ -168,6 +170,7 @@ header .intro-text .skills {
 .navbar-custom .navbar-toggle {
   color: white;
   font-size: 25px;
+  margin-top: -5px;
   border-color: transparent;
 }
 .navbar-custom .navbar-toggle:hover,
@@ -289,6 +292,11 @@ section.success {
 }
 #portfolio * {
   z-index: 2;
+}
+@media screen and (max-width: 600px) {
+  #portfolio .portfolio-item .portfolio-link {
+    max-width: 85%;
+  }
 }
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
@@ -506,7 +514,8 @@ fieldset[disabled] .btn-success.active {
   flex-wrap: wrap;
   padding: 0 4px;
 }
-/* Create three equal columns that sits next to each other */
+
+/* Create two equal columns that sits next to each other */
 .column {
   flex: 50%;
   max-width: 50%;
