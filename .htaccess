@@ -1,12 +1,12 @@
 # mod_rewrite
 RewriteEngine on
 
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
+
 # Does not apply to existing directories
 RewriteCond %{REQUEST_FILENAME} !-d
 
 # Check for file in directory with .html extension
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
-
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s(.*)/index\.(php|html)\ HTTP [NC]
-RewriteRule (^|/)index\.(php|html)$ /%1 [NC,R=301,L]
