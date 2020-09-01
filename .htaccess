@@ -1,6 +1,7 @@
 # mod_rewrite
 RewriteEngine on
 
+# Remove index.html from url
 RewriteRule ^index\.html$ / [R=301,L]
 RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
 
